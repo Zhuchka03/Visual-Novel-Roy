@@ -4,9 +4,9 @@ using TMPro;
 using UnityEditor;
 //using static TextArchitect;
 
-public class TextArchitect : MonoBehaviour
+public class TextArchitect: MonoBehaviour
 {
-    // private TextMeshProUGUI tmpro_ui;
+    //private TextMeshProUGUI tmpro_ui;
     public TextMeshProUGUI tmpro_ui;
     private TextMeshPro tmpro_world;
 

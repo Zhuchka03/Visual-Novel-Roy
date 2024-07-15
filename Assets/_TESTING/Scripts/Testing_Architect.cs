@@ -27,7 +27,7 @@ namespace TESTING
         {
             ds = DialogueSystem.instance;
             dT = ds.dialogueContainer.dialogueText;
-            // architect = new TextArchitect(ds.dialogueContainer.dialogueText); //vse comment
+            // architect = new TextArchitect(ds.dialogueContainer.dialogueText); 
             //TextArchitect architect;
             //architect = new TextArchitect(ds.dialogueContainer.dialogueText);
             // architect = Instantiate(TextArchitect(dT)) as TextArchitect;

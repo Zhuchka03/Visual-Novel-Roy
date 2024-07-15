@@ -19,6 +19,7 @@ namespace DIALOGUE
         public ConversationManager(TextArchitect architect)
         {
             this.architect = architect;
+            this.architect.targetText = "eeeeee";
             dialogueSystem.onUserPrompt_Next += OnUserPrompt_Next;
         }
 
@@ -52,6 +53,8 @@ namespace DIALOGUE
 
             for (int i = 0; i < conversation.Count; i++)
             {
+                //this.architect.targetText = conversation[i];
+                //this.architect.Build(conversation[i]);
                 //Dont-show any blank lines or try to run any logic on-them.
                 if (string.IsNullOrWhiteSpace(conversation[i]))
                     continue;
@@ -104,7 +107,7 @@ namespace DIALOGUE
                  if (userPrompt)
                  {
                      if (!architect.hurryUp)
-                         architect.hurryUp = true; //false? or true
+                         architect.hurryUp = true; //false or true
                      else
                          //architect.ForceComplete();    ///!!!!!!
                      userPrompt = false;
