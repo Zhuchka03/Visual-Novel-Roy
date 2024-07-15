@@ -1,13 +1,13 @@
-Detective: "This changes everything. {a} We're dealing with a whole new level of evil here."
+Таш: "Это все меняет. {a} Мы имеем дело с совершенно новым уровнем зла".
 
-Partner: "I know. {c}It's hard to believe that someone could do something ... {wa 1} like this."
+Алекс: "Я знаю. {c} Трудно поверить, что кто-то мог что-то сделать... {wa 1} подобное".
 
-Detective: "We need to find this killer and put a stop to his experiments. {c}But how do we even begin to track him down?"
+Таш: "Нам нужно найти этого убийцу и положить конец его экспериментам. {c} Но как нам вообще начать его выслеживать?"
 
-Partner: "Maybe we can start by looking at the victims. {wa 0.5} See if there's any connection between them."
+Алекс: "Может быть, мы могли бы начать с изучения жертв. {wa 0.5} Посмотрим, есть ли между ними какая-то связь."
 
-Detective: "Good idea. {wc 1} But we need to be careful. {a} If this guy is experimenting with the supernatural, {wa 1} who knows what kind of powers he might have."
+Таш: "Хорошая идея. {wc 1} Но нам нужно быть осторожными. Если этот парень экспериментирует со сверхъестественным, кто знает, какими способностями он может обладать".
 
-Partner: "I'll see if I can dig up any information on local occult groups. {a} Maybe someone's heard something."
+Алекс: "Я посмотрю, смогу ли я найти какую-нибудь информацию о местных оккультных группах. Может быть, кто-то что-то слышал".
 
-Detective: "Alright.{a} In the meantime, I'll try to gather as much evidence as possible. {c} We'll catch this guy, no matter what it takes."
+Таш: "Хорошо.{a} Тем временем я постараюсь собрать как можно больше улик. {c} Мы поймаем этого парня, чего бы это ни стоило".
