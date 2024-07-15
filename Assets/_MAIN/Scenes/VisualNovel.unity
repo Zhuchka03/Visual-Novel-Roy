@@ -1187,6 +1187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f290b7a32419f84abdd17852e05fca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dT: {fileID: 0}
   dialogueContainer:
     root: {fileID: 137875831}
     nameContainer:
@@ -3487,4 +3488,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 122b04879047e5844913bc1bf1e46a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  file: {fileID: 4900000, guid: 3ec76acb9f3142f42b5baa231f275e90, type: 3}
+  fileToRead: {fileID: 4900000, guid: 358e48ba56b672c42bc4f084916b5ced, type: 3}

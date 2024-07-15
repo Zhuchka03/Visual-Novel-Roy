@@ -7,3 +7,7 @@ World "Hello, \"Quote Here\" right back at you!"
 рассказчик "And so ended the traditional 'Hello World' conversation." PlaySong(End, -p 0.5), list(players), saveGame(1 -g all -f simple)
 
 narrator "Проверка связи без имени"
+
+Таш "Говорит Таш 1"
+"Говорит Таш 2"
+"Говорит Таш 3"

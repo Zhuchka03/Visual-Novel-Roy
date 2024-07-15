@@ -18,7 +18,7 @@ namespace DIALOGUE
         private ConversationManager conversationManager;
         private TextArchitect architect;
 
-        public static DialogueSystem instance;
+        public static DialogueSystem instance { get; private set; }
 
         public delegate void DialogueSystemEvent(); 
         public event DialogueSystemEvent onUserPrompt_Next; 
@@ -69,14 +69,11 @@ namespace DIALOGUE
         {
             Debug.Log("It is wooooork0");
             if ((speakerName.ToLower() != "рассказчик") && (speakerName.ToLower() != "narrator"))
-            {
-                Debug.Log("speakerName1 ="+ speakerName.ToLower() + "|||||||||||||");
-
+            {       
                 dialogueContainer.nameContainer.Show(speakerName);
             }
             else
-            {
-                Debug.Log("speakerName2 =" + speakerName.ToLower() + "}}}}}}}}}}}");
+            {        
                 dialogueContainer.nameContainer.Hide();
                 
             }
