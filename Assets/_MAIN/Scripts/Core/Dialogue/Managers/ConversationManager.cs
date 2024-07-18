@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using static UnityEngine.Rendering.HableCurve;
 
+
 namespace DIALOGUE
 {
     public class ConversationManager
@@ -79,18 +80,18 @@ namespace DIALOGUE
 
             //Show or hide the speaker name if there is one present.
             if (line.hasSpeaker)
-                dialogueSystem.ShowSpeakerName(line.speaker.displayname);
+                dialogueSystem.ShowSpeakerName(line.speakerData.displayname);
 
 
             //build dialogue
-            yield return BuildLineSegments(line.dialogue);
+            yield return BuildLineSegments(line.dialogueData);
             //wait for user input
             yield return WaitForUserInput();
         }
 
         IEnumerator Line_RunCommands(DIALOGUE_LINE line)
         {
-            Debug.Log(line.commands);
+            Debug.Log(line.commandsData);
             yield return null;
 
         }
@@ -147,7 +148,7 @@ namespace DIALOGUE
                      if (!architect.hurryUp)
                          architect.hurryUp = true; //false or true
                      else
-                         //architect.ForceComplete();    ///!!!!!!
+                        // architect.ForceComplete();    ///!!!!!!
                      userPrompt = false;
                  }
                  yield return null;
