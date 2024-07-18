@@ -1,13 +1,7 @@
-Героиня "Привет мир!" list(items -f long), playSong("Intro Song" -v 1)
+Tash as ??? "Hello there"
 
-setScene("Classroom" -s 5.5)
+Tash as ??? at 1:0 "Hello there"
 
-World "Hello, \"Quote Here\" right back at you!"
+Tash at 0.5:0.5 as The Girl "Hello there"
 
-рассказчик "And so ended the traditional 'Hello World' conversation." PlaySong(End, -p 0.5), list(players), saveGame(1 -g all -f simple)
-
-narrator "Проверка связи без имени"
-
-Таш "Говорит Таш 1"
-"Говорит Таш 2"
-"Говорит Таш 3"
+Tash as ??? [0:Anglel, 1:happy] at 0 "Hello there"

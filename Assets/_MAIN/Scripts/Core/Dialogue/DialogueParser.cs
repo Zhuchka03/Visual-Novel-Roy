@@ -9,7 +9,7 @@ namespace DIALOGUE
     public class DialogueParser
     {
 
-        private const string commandRegexPattern = "\\w*[^\\s]\\(";
+        private const string commandRegexPattern = @"\w*[^\s]\(";
         public static DIALOGUE_LINE Parse(string rawLine)
         {
 
@@ -68,7 +68,7 @@ namespace DIALOGUE
                     commands = rawLine.Substring(commandStart).Trim();
 
             }
-            else if (commandStart != -1 && dialogueStart > commandStart)
+            else if (commandStart != -1 && dialogueStart > commandStart) 
                 commands = rawLine;
             else
                 speaker = rawLine;
