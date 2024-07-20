@@ -2,7 +2,7 @@ using DIALOGUE;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static DL_COMMAND_DATA;
+
 
 public class TestDialogueFiles : MonoBehaviour
 {

@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using DIALOGUE;
-using UnityEngine.Rendering.Universal;
-using Unity.VisualScripting;
+
 
 namespace DIALOGUE
 {
-  
+
 
     public class DialogueSystem : MonoBehaviour
     {
+       [SerializeField] private DialogueSystemConfigurationSO _config;
+        public DialogueSystemConfigurationSO config => _config;
+
         DialogueSystem ds;
         public TextMeshProUGUI dT;
         public DialogueContainer dialogueContainer;// = new DialogueContainer();

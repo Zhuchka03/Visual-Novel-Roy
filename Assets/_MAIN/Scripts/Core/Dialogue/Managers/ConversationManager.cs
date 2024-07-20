@@ -89,7 +89,7 @@ namespace DIALOGUE
             yield return WaitForUserInput();
         }
 
-        IEnumerator Line_RunCommands(DIALOGUE_LINE line)   
+        IEnumerator Line_RunCommands(DIALOGUE_LINE line)    ////тут была последняя работа 18.07 30я минута где-то
         {
             Debug.Log(line.commandsData);
             yield return null;

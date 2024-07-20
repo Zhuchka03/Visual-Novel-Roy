@@ -1,3 +1,4 @@
+using COMMANDS;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,7 @@ public class CommandTesting : MonoBehaviour
         StartCoroutine(Running());
     }
 
-
+                                                                       
     IEnumerator Running()
     {
         yield return CommandManager.instance.Execute("print");
