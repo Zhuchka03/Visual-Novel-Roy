@@ -10,7 +10,9 @@ namespace TESTING
       
         void Start()
         {
-            Character character = CharacterManager.instance.CreateCharacter("Rin");
+            Character Alex = CharacterManager.instance.CreateCharacter("Alex");
+            Character Rin = CharacterManager.instance.CreateCharacter("Rin");
+            Character Azul = CharacterManager.instance.CreateCharacter("Azul");
         }
 
 

@@ -10,12 +10,14 @@ namespace CHARACTERS
         public static CharacterManager instance { get; private set; }
         private Dictionary<string, Character> characters = new Dictionary<string, Character>();
 
-        private CharacterConfigSO config = DialogueSystem.instance.config.characterConfigurationAsset;
+
+        private CharacterConfigSO config; //= DialogueSystem.instance.config.characterConfigurationAsset;
 
         private void Awake()
         {
-
             instance = this;
+
+            config = DialogueSystem.instance.config.characterConfigurationAsset;
         }
         public Character CreateCharacter(string characterName)
         {
@@ -29,7 +31,10 @@ namespace CHARACTERS
 
             CHARACTER_INFO info = GetCharacterInfo(characterName);
 
-            return null;
+            Character character = CreateCharacterFromInfo(info); //добавилось 3
+
+            return character; // стало
+
         }
 
         private CHARACTER_INFO GetCharacterInfo(string characterName)
@@ -38,12 +43,37 @@ namespace CHARACTERS
             CHARACTER_INFO result = new CHARACTER_INFO();
 
             result.name = characterName;
+
+            result.config = new CharacterConfigData();
             result.config = config.GetConfig(characterName);
 
             return result;
 
         }
-        private class CHARACTER_INFO {
+        private Character CreateCharacterFromInfo(CHARACTER_INFO info)
+        {
+
+            switch (info.config.characterType)
+            {
+                case Character.CharacterType.Text:
+                    return new Character_Text(info.name);
+
+                case Character.CharacterType.Sprite:
+                case Character.CharacterType.SpriteSheet:
+                    return new Character_Sprite(info.name);
+
+                case Character.CharacterType.Live2D:
+                    return new Character_Live2D(info.name);
+
+                case Character.CharacterType.Model3D:
+                    return new Character_Model3D(info.name);
+
+                default:
+                    return null;
+            }
+        }
+        private class CHARACTER_INFO
+        {
 
             public string name = "";
 

@@ -15,7 +15,7 @@ namespace DIALOGUE
 
         DialogueSystem ds;
         public TextMeshProUGUI dT;
-        public DialogueContainer dialogueContainer;// = new DialogueContainer();
+        public DialogueContainer dialogueContainer;// new DialogueContainer();
         private ConversationManager conversationManager;
         private TextArchitect architect;
 
@@ -68,7 +68,7 @@ namespace DIALOGUE
         
         public void ShowSpeakerName(string speakerName = "")
         {
-            Debug.Log("It is wooooork0");
+            
             if ((speakerName.ToLower() != "рассказчик") && (speakerName.ToLower() != "narrator"))
             {       
                 dialogueContainer.nameContainer.Show(speakerName);

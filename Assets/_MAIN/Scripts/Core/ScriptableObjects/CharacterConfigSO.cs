@@ -10,8 +10,14 @@ namespace CHARACTERS
         public CharacterConfigData[] characters;
 
         public CharacterConfigData GetConfig(string characterName) {
+            Debug.Log(" getConfig begin ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;");
 
             characterName = characterName.ToLower();
+
+            if (characterName == null)
+            {
+                Debug.Log(" characterName is null.");
+            }
 
             for (int i = 0; i < characters.Length; i++) 
             { 
@@ -21,6 +27,7 @@ namespace CHARACTERS
             if (string.Equals(characterName, data.name.ToLower()) || string.Equals(characterName, data.alias.ToLower()))       
                 return data.Copy();
             }
+            Debug.Log(" getConfig before default ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;" );
             return CharacterConfigData.Default;
         }
     }

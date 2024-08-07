@@ -1,16 +1,16 @@
-Таш: "Это все меняет. {a} Мы имеем дело с совершенно новым уровнем зла".
+Tash: "This changes everything. {a} We are dealing with a whole new level of evil."
 
-Алекс: "Я знаю. {c} Трудно поверить, что кто-то мог что-то сделать... {wa 1} подобное".
+Alex: "I know. {c} It's hard to believe that someone could have done something... {wa 1} similar."
 
-Таш: "Нам нужно найти этого убийцу и положить конец его экспериментам. {c} Но как нам вообще начать его выслеживать?"
+Tash: "We need to find this killer and put an end to his experiments. {c} But how do we even start tracking him down?"
 
-Алекс: "Может быть, мы могли бы начать с изучения жертв. {wa 0.5} Посмотрим, есть ли между ними какая-то связь."
+Alex: "Maybe we could start by looking at the victims. {wa 0.5} Let's see if there is any connection between them."
 
-Таш: "Хорошая идея. {wc 1} Но нам нужно быть осторожными. Если этот парень экспериментирует со сверхъестественным, кто знает, какими способностями он может обладать".
+Tash: "That's a good idea. {wc 1} But we need to be careful. If this guy is experimenting with the supernatural, who knows what kind of abilities he might have."
 
-Алекс: "Я посмотрю, смогу ли я найти какую-нибудь информацию о местных оккультных группах. Может быть, кто-то что-то слышал".
+Alex: "I'll see if I can find any information about local occult groups. Maybe someone heard something."
 
-Таш: "Хорошо.{a} Тем временем я постараюсь собрать как можно больше улик. {c} Мы поймаем этого парня, чего бы это ни стоило".
+Tash: "Okay.{a} In the meantime, I will try to collect as much evidence as possible. {c} We're going to catch this guy, no matter what it takes."
 
 speaker "Dialogue Goes Here" Command(args), Command(args)
 

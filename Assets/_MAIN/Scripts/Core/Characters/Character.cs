@@ -6,7 +6,6 @@ namespace CHARACTERS
 {
     public abstract class Character
     {
-
         public string name = "";
         public RectTransform root = null;
 
@@ -14,7 +13,6 @@ namespace CHARACTERS
         {
             this.name = name;
         }
-
         public enum CharacterType
         {
 
@@ -22,7 +20,7 @@ namespace CHARACTERS
             Sprite,
             SpriteSheet,
             Live2D,
-            Mode13D
+            Model3D
         }
     }
 }
